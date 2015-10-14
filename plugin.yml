@@ -1,0 +1,32 @@
+name: StaffBook
+main: bmckalip.StaffBook.StaffBook
+version: 0.1
+commands:
+  NM:
+     description: Enables notemode to ensure safe notetaking
+     usage: /NM
+  Log:
+     description: Begins logging a player
+     usage: /Log <player>
+  AddNote:
+     description: Adds a note to a player
+     usage: /AddNote <Player> <Message>
+  DelNote:
+     description: removes a note from a player
+     usage: /DelNote <Player> <id>
+  SetStanding:
+     description: sets a player's standing <Great/Good/Poor/Awful>
+     usage: /SetStanding <Player> <Great/Good/Poor/Awful>
+  SetAge:
+     description: sets a player's Age
+     usage: /SetStanding <Player> <age>
+  GetInfo:
+     description: Gets a printout of the player's information, including their notes.
+     usage: /GetInfo <player>
+  NoobList:
+     description: Adds/Removes players from the list. Displays list if no arguments are given.
+     usage: /NoobList <Add/Remove/Page> <Player> <Noob/Hopeful>
+permissions:
+  staffbook.commands:
+     desciption: grants access to all StaffBook commands
+     default: op
